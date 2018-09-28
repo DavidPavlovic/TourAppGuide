@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationItemActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_light_green">
+
+    <ImageView
+        android:id="@+id/location_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/vila_akacija"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/location_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Grad"
+        android:textSize="24sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/location_item_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginLeft="16dp"
+        tools:text="Adresa"/>
+
+    <RatingBar
+        android:id="@+id/location_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:isIndicator="true"
+        android:rating="0.0"
+        android:progressTint="#ff3300"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+
+        android:theme="@style/RatingBar"/>
+</LinearLayout>

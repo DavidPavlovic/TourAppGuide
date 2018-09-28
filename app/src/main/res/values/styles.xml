@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Style for a tab that displays a category name -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <!-- Style for bottom line that indicates selected tab -->
+        <item name="tabIndicatorColor">#fee222</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <!-- Text appearance style for a category tab -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+
+        <item name="colorControlNormal">#000</item>
+    </style>
+
+</resources>
